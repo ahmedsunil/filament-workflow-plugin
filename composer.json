@@ -1,20 +1,24 @@
 {
-  "name": "ahmedshaan/filament-approval-workflow",
-  "description": "Filament v3 plugin for the approval workflow is an excellent way to package this functionality and make it easily reusable across different Filament projects.",
-  "type": "composer-plugin",
-  "autoload": {
-    "psr-4": {
-      "Ahmedshaan\\FilamentApprovalWorkflow\\": "src/"
+    "name": "ahmedshaan/filament-approval-workflow",
+    "description": "Filament v3 plugin for the approval workflow is an excellent way to package this functionality and make it easily reusable across different Filament projects.",
+    "type": "composer-plugin",
+    "autoload": {
+        "psr-4": {
+            "Ahmedshaan\\FilamentApprovalWorkflow\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ahmed Sunil",
+            "email": "iahmednill@gmail.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AhmedShaan\\FilamentApprovalWorkflow\\FilamentApprovalWorkflowServiceProvider"
+            ]
+        }
     }
-  },
-  "authors": [
-    {
-      "name": "Ahmed Sunil",
-      "email": "iahmednill@gmail.com"
-    }
-  ],
-  "require": {},
-  "extra": {
-    "class": "AhmedShaan\\FilamentApprovalWorkflow\\ComposerPlugin"
-  }
 }

@@ -1,16 +1,16 @@
 <?php
 
-namespace AhmedShaan\FilamentApprovalWorkflow\Traits;
+namespace Ahmedshaan\FilamentApprovalWorkflow\Traits;
 
+use Ahmedshaan\FilamentApprovalWorkflow\FilamentApprovalWorkflowPlugin;
 use Filament\Forms;
-use AhmedShaan\FilamentApprovalWorkflow\FilamentApprovalWorkflowPlugin;
 
 trait HasApprovalWorkflowForm
 {
     public function getFormSchema(): array
     {
         return [
-            Forms\Components\Select::make("state")
+            Forms\Components\Select::make('state')
                 ->options(
                     array_combine(
                         static::getPossibleStates(),
