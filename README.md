@@ -2,7 +2,7 @@
 
 ...
 
-3. In your Filament resource, use the plugin's actions, state column, and form components:
+In your Filament resource, use the plugin's actions, state column, and form components:
 
 ```php
 use AhmedShaan\FilamentApprovalWorkflow\FilamentApprovalWorkflowPlugin;
